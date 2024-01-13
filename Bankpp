@@ -1,5 +1,5 @@
 class Account:
-    def __init__(self, balance):
+    def __init__(self, balance=0):
         self.balance = balance
 
     def deposit(self, amount):
@@ -12,7 +12,7 @@ class Account:
     def get_balance(self):
         return self.balance
 
-account = Account()
-account.deposit()
+account = Account(100)
+account.deposit(50)
 account.withdraw()
 print(account.get_balance())
